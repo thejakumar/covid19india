@@ -1,0 +1,195 @@
+nav {
+  position: fixed;
+  width: 99%;
+  background-color: white;
+}
+
+img {
+    float: left;
+    width: 50px;
+}
+
+logo {
+    font-size: 40px;
+    margin-left: 8px;
+    color: rgb(194, 14, 14);
+}
+
+hd {
+  font-size: 32px;
+  color: rgb(77, 77, 179);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.li {
+    padding: 10px;
+    list-style-type: none;
+    float: left;
+    margin-top: 4px;
+}
+
+.li:hover {
+    background-color: rgb(219, 35, 35);
+}
+
+a {
+    display: block;
+    text-underline-position: none;
+    text-decoration: none;
+    color: black;
+}
+
+.search {
+    text-align: center;
+}
+
+input {
+    width: 650px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 100px;
+    color:rgb(194, 14, 14);
+}
+
+.underline {
+  border-bottom: 2px rgb(192, 186, 186) solid;
+  margin-top: 10px;
+}
+
+.result {
+  border: 1px grey solid;
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+.QA {
+  margin-top: 12px;
+}
+
+.adjust {
+  float: left;
+  width: 49.7%;
+}
+
+.question {
+  border-top: 1px grey solid;
+  border-right: 1px grey solid;
+  margin-top: -20px;
+  font-size: 20px;
+  color: rgb(194, 14, 14);
+}
+
+.answer {
+  border-top: 1px grey solid;
+  border-left: 1px grey solid;
+  margin-top: -20px;
+  font-size: 20px;
+  color: rgb(8, 143, 8);
+}
+
+.hr {
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 1057px) {
+  .adjust {
+    width: 100%;
+  }
+
+  .question {
+    border-right: none;
+  }
+
+  .answer {
+    border-left: none;
+  }
+}
+
+.red {
+  color: rgb(194, 14, 14);
+  font-size: 23px;
+}
+
+.green {
+  color: rgb(8, 143, 8);
+  font-size: 23px;
+}
+
+.space-top {
+  padding-top: 80px;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.table-title {
+  font-size: 23px;
+  text-align: center;
+}
+
+.box {
+  border: 1px grey solid;
+  max-width: 55%;
+  margin: auto;
+}
+
+.main {
+  text-align: center;
+  font-size: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr th {
+  background-color: white;
+}
+
+tr {
+  background-color: rgb(198, 198, 243);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(201, 250, 201);
+} 
+
+.name {
+  padding: 10px;
+}
+
+.resQ {
+  padding-left: 20px;
+  color: rgb(194, 14, 14);
+}
+
+.resA {
+  padding-left: 20px;
+  color: rgb(8, 143, 8);
+}
+
+#liQH {
+  cursor: pointer;
+}
+
+#liAH {
+  cursor: pointer;
+}
