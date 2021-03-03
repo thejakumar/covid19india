@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cases</title>
+        <link rel=stylesheet type=text/css href=style.css>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="cases()">
+        <div>
+            <nav>
+                <img src="corona.png"/>
+                <logo>COVID-19 <hd>Cases</hd></logo>
+                <ul>
+                    <li class="li"><a href="index.html">Q&A</a></li>
+                    <li class="li"><a href="cases.html">Cases</a></li>
+                    <li class="li"><a href="rate.html">Comparison</a></li>
+                    <li class="li"><a href="help.html">Help Line Numbers</a></li>
+                </ul>
+                <hr/>
+            </nav>.
+        </div>
+        <div class="space-top"></div>
+        <div class="india-cases">
+            <header>India Cases</header> 
+            <img alt="india" class="india-map" src="india.png">
+            <table>
+                <tr class="main-head">
+                    <th class="confirmed">Confirmed</th>
+                    <th class="active">Active</th>
+                    <th class="recovered">Recovered</th>
+                    <th class="deaths">Deceased</th>
+                </tr>
+                <tr>
+                    <td class="confirmed" id="confirmed"></td>
+                    <td class="active" id="active"></td>
+                    <td class="recovered" id="recovered"></td>
+                    <td class="deaths" id="deaths"></td>
+                </tr>
+            </table>
+            <p class="header">Graphs</p>
+
+            <div class="c-chart chart" id="curve_chart0"></div>
+            <p class="head head-confirmed">Confirmed Cases</p>
+
+            <div class="a-chart chart" id="curve_chart1"></div>
+            <p class="head head-active">Active Cases</p>
+
+            <div class="r-chart chart" id="curve_chart2"></div>
+            <p class="head head-recovered">Recoveres Cases</p>
+
+            <div class="d-chart chart" id="curve_chart3"></div>
+            <p class="head head-death">Deceased</p>
+        </div>
+        <div class="world-cases">
+            <header>World Cases</header>
+            <img src=world.png alt=world class=world-map>
+            <table>
+                <tr class="main-head">
+                    <th class="confirmed">Confirmed</th>
+                    <th class="active">Active</th>
+                    <th class="recovered">Recovered</th>
+                    <th class="deaths">Deceased</th>
+                </tr>
+                <tr>
+                    <td class="confirmed" id="confirmed1"></td>
+                    <td class="active" id="active1"></td>
+                    <td class="recovered" id="recovered1"></td>
+                    <td class="deaths" id="deaths1"></td>
+                </tr>
+            </table>
+            <p class="header">Graphs</p>
+
+            <div class="c-chart chart" id="curve_chart4"></div>
+            <p class="head head-confirmed">Confirmed Cases</p>
+
+            <div class="a-chart chart" id="curve_chart5"></div>
+            <p class="head head-active">Active Cases</p>
+
+            <div class="r-chart chart" id="curve_chart6"></div>
+            <p class="head head-recovered">Recoveres Cases</p>
+
+            <div class="d-chart chart" id="curve_chart7"></div>
+            <p class="head head-death">Deceased</p>
+        </div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type=text/javascript src=script.js></script>
+    </body>
+    <footer>
+        <div class=center1>
+            Sources: 
+            <a target=_blank href="https://www.covid19india.org"><c>https://www.covid19india.org</c></a>
+            <a target=_blank href="https://www.worldometers.info/coronavirus"><c>https://www.worldometers.info/coronavirus</c></a>
+            API's
+            <a target=_blank href="https://api.covid19india.org/data.json"><c>https://api.covid19india.org/data.json</c></a>
+            <a target=_blank href="https://disease.sh/v2/all"><c>https://disease.sh/v2/all</c></a>
+            <a target=_blank href="https://pomber.github.io/covid19/timeseries.json"><c>https://pomber.github.io/covid19/timeseries.json</c></a>
+        </div>
+    </footer>
+</html>

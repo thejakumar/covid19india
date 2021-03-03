@@ -6,29 +6,38 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload="questionAnswer()">
         <div>
             <nav>
                 <img src="corona.png"/>
                 <logo>COVID-19 <hd>Help Desk</hd></logo>
                 <ul>
                     <li class="li"><a href="index.html">Q&A</a></li>
+                    <li class="li"><a href="cases.html">Cases</a></li>
+                    <li class="li"><a href="rate.html">Comparison</a></li>
                     <li class="li"><a href="help.html">Help Line Numbers</a></li>
                 </ul>
                 <hr/>
-            </nav>
+            </nav>.
         </div>
-        <div class="search">
-            <input placeholder="Search Q&A here" id=input>
-        </div>
-        <div class=QA>
-            <div class=adjust>
-                <p class=red>Possible Questions</p>
-                <div class=question id=question></div>
+        <div class=body>
+            <div class="search">
+                <input placeholder="Search Q&A here" id=input>
             </div>
-            <div class=adjust>
-                <p class=green>Related Answers</p>
-                <div class=answer id=answer></div>
+            <div class=selectedQA>
+                <div id=selectedQA>Click on the Generated Questions to see Solutions here.</div>
+                <div class=redS id=redS></div>
+                <div class=questionS id=questionS></div>
+                <div class=greenS id=greenS></div>
+                <div class=answerS id=answerS></div>
+            </div>
+            <div class=QA>
+                <div class=adjust id=adjust>
+                    <p class=red>Possible Questions</p>
+                    <div class=question id=question>
+                        <div id=info style="color: black">Possible questions are generated here.</div>
+                    </div>
+                </div>
             </div>
         </div>
         <script type="text/javascript" src=script.js></script>

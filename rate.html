@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Comparison</title>
+        <link rel=stylesheet type=text/css href=style.css>
+        <meta name=viewport content="width=device-width, initia-scale=1">
+    </head>
+    <body onload="rate()">
+        <div>
+            <nav>
+                <img src="corona.png"/>
+                <logo>COVID-19 <hd>Comparison</hd></logo>
+                <ul>
+                    <li class="li"><a href="index.html">Q&A</a></li>
+                    <li class="li"><a href="cases.html">Cases</a></li>
+                    <li class="li"><a href="rate.html">Comparison</a></li>
+                    <li class="li"><a href="help.html">Help Line Numbers</a></li>
+                </ul>
+                <hr/>
+            </nav>.
+        </div>
+        <script type=text/javascript src=script.js></script>
+        <div class="space-top"></div>
+        <div class=information>
+            Comparison is based on Cases Per Million Population
+        </div>
+        <div class=comparison>
+            <div id=final-outcome></div>
+            <div class=select>
+                <select class=select-left id=select-left>
+                    <option id=l0>Select Country</option>
+                </select>
+                <select class=select-right id=select-right>
+                    <option id=r0>Select Country</option>
+                </select>
+            </div>
+            <div class=countries>
+                <img id=countryFlagLeft class=country-flag-left>
+                <countryNameLeft id=countryLeft></countryNameLeft>
+                <countryNameRight id=countryRight></countryNameRight>
+                <img id=countryFlagRight class=country-flag-right>
+            </div>
+            <div class=cases>
+                <div class=block>
+                    <table class=left>
+                        <mainHeader class=mainC>
+                            <b>Confirmed</b>
+                        </mainHeader>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=casesLeft>
+                                No Data
+                            </td>
+                            <td id=casesPMLeft>
+                                No Data
+                            </td>
+                        </tr>
+                    </table>
+                    <div class=space>
+                        <div class=space-left>
+                        </div>
+                        <div class=space-right>
+
+                        </div>
+                    </div>
+                    <div class=middle>
+                        <table class=comp>
+                            <tr>
+                                <mainHeader class="comp mainC">
+                                    <b>Comparison</b>
+                                </mainHeader>
+                            </tr>
+                            <tr>
+                                <td class=comp-left id=c-left>
+                                </td>
+                                <td class=comp-right id=c-right>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class=right>
+                        <mainHead class=mainC>
+                            <b>Confirmed</b>
+                        </mainHead>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=casesRight>
+                                No Data
+                            </td>
+                            <td id=casesPMRight>
+                                No Data
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class=left1>
+                        <mainHeader class="mainA">
+                            <b>Active</b>
+                        </mainHeader>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=activeLeft>
+                                No Data
+                            </td>
+                            <td id=activePMLeft>
+                                No Data
+                            </td>
+                        </tr>
+                    </table>
+                    <div class=space>
+                        <div class=space-left>
+                        </div>
+                        <div class=space-right>
+
+                        </div>
+                    </div>
+                    <div class=middle1>
+                        <table class=comp>
+                            <tr>
+                                <mainHeader class="comp mainA">
+                                    <b>Comparison</b>
+                                </mainHeader>
+                            </tr>
+                            <tr>
+                                <td class=comp-left id=a-left>
+                                </td>
+                                <td class=comp-right id=a-right>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class=right>
+                        <mainHead class="mainA">
+                            <b>Active</b>
+                        </mainHead>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=activeRight>
+                                No Data
+                            </td>
+                            <td id=activePMRight>
+                                No Data
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class=left2>
+                        <mainHeader class=mainR>
+                            <b>Recovered</b>
+                        </mainHeader>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=recoveredLeft>
+                                No Data
+                            </td>
+                            <td id=recoveredPMLeft>
+                                No Data
+                            </td>
+                        </tr>
+                    </table>
+                    <div class=space>
+                        <div class=space-left>
+                        </div>
+                        <div class=space-right>
+
+                        </div>
+                    </div>
+                    <div class=middle2>
+                        <table class=comp>
+                            <tr>
+                                <mainHeader class="comp mainR">
+                                    <b>Comparison</b>
+                                </mainHeader>
+                            </tr>
+                            <tr>
+                                <td class=comp-left id=r-left>
+                                </td>
+                                <td class=comp-right id=r-right>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class=right>
+                        <mainHead class=mainR>
+                            <b>Recovered</b>
+                        </mainHead>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=recoveredRight>
+                                No Data
+                            </td>
+                            <td id=recoveredPMRight>
+                                No Data
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class=left3>
+                        <mainHeader class=mainD>
+                            <b>Deceased</b>
+                        </mainHeader>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=deathsLeft>
+                                No Data
+                            </td>
+                            <td id=deathsPMLeft>
+                                No Data
+                            </td>
+                        </tr>
+                    </table>
+                    <div class=space>
+                        <div class=space-left>
+                        </div>
+                        <div class=space-right>
+
+                        </div>
+                    </div>
+                    <div class=middle3>
+                        <table class=comp>
+                            <tr>
+                                <mainHeader class="comp mainD">
+                                    <b>Comparison</b>
+                                </mainHeader>
+                            </tr>
+                            <tr>
+                                <td class=comp-left id=d-left>
+                                </td>
+                                <td class=comp-right id=d-right>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class=right>
+                        <mainHead class=mainD>
+                            <b>Deceased</b>
+                        </mainHead>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=deathsRight>
+                                No Data
+                            </td>
+                            <td id=deathsPMRight>
+                                No Data
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class=left4>
+                        <mainHeader class=mainT>
+                            <b>Test</b>
+                        </mainHeader>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=testLeft>
+                                No Data
+                            </td>
+                            <td id=testPMLeft>
+                                No Data
+                            </td>
+                        </tr>
+                    </table>
+                    <div class=space>
+                        <div class=space-left>
+                        </div>
+                        <div class=space-right>
+
+                        </div>
+                    </div>
+                    <div class=middle4>
+                        <table class=comp>
+                            <tr>
+                                <mainHeader class="comp mainT">
+                                    <b>Comparison</b>
+                                </mainHeader>
+                            </tr>
+                            <tr>
+                                <td class=comp-left id=t-left>
+                                </td>
+                                <td class=comp-right id=t-right>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class=right>
+                        <mainHead class=mainT>
+                            <b>Test</b>
+                        </mainHead>
+                        <tr>
+                            <th>Cases</th>
+                            <th>Cases/Million Population</th>
+                        </tr>
+                        <tr>
+                            <td id=testRight>
+                                No Data
+                            </td>
+                            <td id=testPMRight>
+                                No Data 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+             </div>
+        </div>
+    </body>
+    <footer>
+        <div class=center>
+            <a target=_blank href="https://www.worldometers.info/coronavirus">Source: <c>https://www.worldometers.info/coronavirus</c></a>
+            <a target=_blank href=https://disease.sh/v2/countries>API: <c>https://disease.sh/v2/countries</c></a>
+        </div>
+    </footer>
+</html>
